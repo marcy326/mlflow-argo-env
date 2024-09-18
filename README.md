@@ -46,7 +46,7 @@
     kubectl port-forward svc/argo-server -n argo 2746:2746
     ```
 
-1. ブラウザからアクセス: ブラウザから https://localhost:2746 にアクセスする。
+1. ブラウザからアクセス: ブラウザから https://localhost:2746 にアクセスします。
 
 
 ## ファイル説明
