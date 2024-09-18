@@ -40,11 +40,14 @@
     ./install.sh
     ```
 
-1. Argo Workflowの実行: Kubernetesクラスターが起動されていることを確認し、以下のコマンドでArgo Workflowを実行します。
+1. ポートフォワード: Kubernetesクラスターが起動されていることを確認し、以下のコマンドでポートフォワードを実行します。
 
     ```sh
-    argo submit -n argo argo-workflows/workflow.yaml
+    kubectl port-forward svc/argo-server -n argo 2746:2746
     ```
+
+1. ブラウザからアクセス: ブラウザから https://localhost:2746 にアクセスする。
+
 
 ## ファイル説明
 <pre>
